@@ -1,6 +1,7 @@
-package com.demo.poc.creditcard.service.correct;
+package com.demo.poc.creditcard.service.correct.impl;
 
 import com.demo.poc.creditcard.dto.CreditCardDTO;
+import com.demo.poc.creditcard.service.correct.InterestCalculator;
 
 public class GoldCardInterestCalculator implements InterestCalculator {
 
