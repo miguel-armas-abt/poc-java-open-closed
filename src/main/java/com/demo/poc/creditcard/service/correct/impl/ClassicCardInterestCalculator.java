@@ -8,7 +8,7 @@ public class ClassicCardInterestCalculator implements InterestCalculator {
   private static final String CARD_TYPE = "classic";
 
   @Override
-  public double calculate(CreditCardDTO creditCard) {
+  public double calculateInterest(CreditCardDTO creditCard) {
     return creditCard.getBalance() * 0.02;
   }
 

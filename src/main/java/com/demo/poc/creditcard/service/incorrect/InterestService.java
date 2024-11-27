@@ -8,7 +8,7 @@ import com.demo.poc.creditcard.dto.CreditCardDTO;
  */
 public class InterestService {
 
-  public double calculate(CreditCardDTO creditCard) {
+  public double calculateInterest(CreditCardDTO creditCard) {
     if ("classic".equalsIgnoreCase(creditCard.getType()))
       return creditCard.getBalance() * 0.02;
 

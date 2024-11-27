@@ -16,12 +16,12 @@ public class Main {
      * Servicio con lógica centralizada
      */
     InterestService interestService = new InterestService();
-    interestService.calculate(creditCard);
+    interestService.calculateInterest(creditCard);
 
     /**
      * Selector de estrategias desacopladas
      */
     InterestCalculatorStrategy strategy = new InterestCalculatorStrategy();
-    strategy.calculate(creditCard);
+    strategy.calculateInterest(creditCard);
   }
 }

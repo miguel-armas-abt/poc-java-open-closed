@@ -19,11 +19,11 @@ public class InterestCalculatorStrategy {
     interestCalculators.add(new PlatinumCardInterestCalculator());
   }
 
-  public double calculate(CreditCardDTO creditCard) {
-    return selectCalculator(creditCard.getType()).calculate(creditCard);
+  public double calculateInterest(CreditCardDTO creditCard) {
+    return selectStrategy(creditCard.getType()).calculateInterest(creditCard);
   }
 
-  private InterestCalculator selectCalculator(String cardType) {
+  private InterestCalculator selectStrategy(String cardType) {
     for (InterestCalculator calculator: interestCalculators) {
       if(calculator.supports(cardType))
         return calculator;

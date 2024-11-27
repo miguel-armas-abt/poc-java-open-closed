@@ -8,7 +8,7 @@ public class GoldCardInterestCalculator implements InterestCalculator {
   private static final String CARD_TYPE = "gold";
 
   @Override
-  public double calculate(CreditCardDTO creditCard) {
+  public double calculateInterest(CreditCardDTO creditCard) {
     return creditCard.getBalance() * 0.015;
   }
 

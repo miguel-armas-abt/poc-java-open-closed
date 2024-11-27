@@ -7,7 +7,7 @@ import com.demo.poc.creditcard.dto.CreditCardDTO;
  */
 public interface InterestCalculator {
 
-  double calculate(CreditCardDTO creditCard);
+  double calculateInterest(CreditCardDTO creditCard);
 
   boolean supports(String cardType);
 }
